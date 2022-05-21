@@ -1,0 +1,92 @@
+.vacation-list {
+  height: 100vh;
+  background-color: rgb(247, 247, 249);
+  .create {
+    &__btn {
+      margin: 12px 16px;
+      background-color: #3cb271;
+      color: #ffffff;
+    }
+  }
+  .list {
+    padding: 12px 24px;
+    .atom {
+      background-color: #fff;
+      margin-bottom: 12px;
+      border-radius: 36px;
+      &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 24px 36px;
+        padding-top: 48px;
+        &__left {
+          flex: 1;
+        }
+        .reason {
+          font-weight: 400;
+          font-size: 36px;
+          margin-bottom: 36px;
+        }
+        .type {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-weight: 200;
+          font-size: 30px;
+          margin-bottom: 16px;
+          .icon {
+            height: 36px;
+            width: 36px;
+            margin-right: 12px;
+          }
+        }
+        .date-time {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-weight: 100;
+          font-size: 28px;
+          .icon {
+            height: 36px;
+            width: 36px;
+            margin-right: 12px;
+          }
+        }
+      }
+      &__footer {
+        border-radius: 18px 18px 36px 36px;
+        display: flex;
+        padding: 18px 24px;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 48px;
+        &__item {
+          margin-right: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          .icon {
+            margin-right: 12px;
+            width: 36px;
+            height: 36px;
+          }
+        }
+      }
+    }
+    .during {
+      border: 0.5px solid rgb(251, 177, 144);
+      .atom__footer {
+        background: linear-gradient(rgb(251, 177, 144), rgb(242, 129, 130));
+      }
+    }
+    .done {
+      border: 0.5px solid rgb(220, 225, 225);
+      .atom__footer {
+        background: linear-gradient(rgb(220, 225, 225), rgb(105, 105, 105));
+      }
+    }
+  }
+}
