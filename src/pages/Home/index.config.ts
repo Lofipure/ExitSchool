@@ -1,5 +1,5 @@
 const Config: Taro.Config = {
-    navigationBarTitleText: "逃学威龙"
+    navigationBarTitleText: "我在校外挺好的"
 };
 
 export default Config;

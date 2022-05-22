@@ -9,7 +9,7 @@ export default defineAppConfig({
   window: {
     backgroundTextStyle: "light",
     navigationBarBackgroundColor: "#3CB271",
-    navigationBarTitleText: "逃学威龙",
+    navigationBarTitleText: "我在校外挺好的",
     navigationBarTextStyle: "white"
   },
   tabBar: {

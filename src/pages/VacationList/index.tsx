@@ -1,5 +1,5 @@
 import React, { ElementRef, useRef, useState, ReactNode } from "react";
-import { AtButton, AtToast } from "taro-ui";
+import { AtButton, AtTabs, AtToast } from "taro-ui";
 import { View, Text, Image } from "@tarojs/components";
 import Taro, { useDidShow } from "@tarojs/taro";
 import { getUserInfo, getVacationList, pushVacationList } from "@/utils";

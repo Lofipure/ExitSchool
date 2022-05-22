@@ -1,9 +1,9 @@
+import React from "react";
 import InfoBoard from "@/components/InfoBoard";
 import { IAtom, IUserInfo } from "@/types";
 import { View, Text } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 import moment from "moment";
-import React, { FC } from "react";
 import { AtAvatar, AtDivider } from "taro-ui";
 import { infoBoardConfig } from "./cofig";
 import "./index.less";

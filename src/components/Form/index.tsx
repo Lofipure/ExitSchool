@@ -96,7 +96,11 @@ const Form = forwardRef<IFormHandler, IFormProps>((props, ref) => {
   return (
     <View className={`form ${className}`}>
       {columns?.map(item => (
-        <View className="form__item">
+        <View
+          className={`form__item ${
+            item.type == "image" ? "form__item-height-less" : ""
+          }`}
+        >
           <View className="form__item__label">{item.label}</View>
           <View className="form__item__widget">{renderWidget(item)}</View>
         </View>

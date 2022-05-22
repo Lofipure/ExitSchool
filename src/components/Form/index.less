@@ -1,7 +1,10 @@
 .form {
   padding: 12px 16px;
   &__item {
-    height: 100px;
+    // min-height: 100px;
+    font-size: 24px !important;
+    max-height: 60px;
+    overflow: hidden;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -15,12 +18,29 @@
     .picker {
       height: 100px;
     }
+    input {
+      text-align: right;
+      font-size: 24px;
+    }
     &__widget {
       flex: 1 !important;
       height: 100%;
     }
+    .at-list__item-container {
+      height: 100% !important;
+      text-align: right;
+      font-size: 24px;
+    }
+    .at-list__item-content {
+      margin-right: 0px !important;
+    }
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  &__item-height-less {
+    height: 100% !important;
+    min-height: unset !important;
+    max-height: unset !important;
   }
 }
